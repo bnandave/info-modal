@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b9f4845bd2.js" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="bo.css">
+   
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="card-wrapper">
+            <div><img src="Improved.jpg"></div>
+            <div class="username"><h2>Bhavesh Nandave</h2></div>
+            <div class="designation">Student</div>
+
+            <div class="button-group">
+                <button  onclick="openModal()"class="btn-follow btn-card">
+                    <i onclick="openModal()" class="fa-solid fa-share"></i>&nbsp;Share my profile
+                    
+                </button>
+                <button  class="btn-follow btn-card">Follow Me</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+            <i  onclick="closeModal()"class="fa-solid fa-xmark bom-dom close" ></i>
+        </div>
+        </div>
+        
+        <div>
+            <h3>Share This Via</h3>
+            <div class="icon-container">
+                <a href="#" class="icon" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon" id="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bhaveshnandave/" class="icon" id="instagram">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="icon" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+              </div>
+            </div>
+        
+        </div>
+
+        <!--overlay-->
+
+        <div class="overlay"></div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
